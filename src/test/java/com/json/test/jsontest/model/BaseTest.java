@@ -1,6 +1,7 @@
 package com.json.test.jsontest.model;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
@@ -15,6 +16,7 @@ public class BaseTest {
                 .price(new BigDecimal(100))
                 .createdDate(OffsetDateTime.now())
                 .lastUpdatedDate(OffsetDateTime.now())
+                .myLocalDate(LocalDate.now())
                 .build();
     }
 }
